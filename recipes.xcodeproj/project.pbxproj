@@ -21,6 +21,7 @@
 		5F13E9662B6FC9AD00D7CC00 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5F13E9652B6FC9AD00D7CC00 /* AWSDataStorePlugin */; };
 		5F13E9682B6FC9AD00D7CC00 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 5F13E9672B6FC9AD00D7CC00 /* Amplify */; };
 		5F61524F2B700A7B00033B5C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61524E2B700A7B00033B5C /* DataService.swift */; };
+		5F6152512B79041F00033B5C /* RecipeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6152502B79041F00033B5C /* RecipeDetailsView.swift */; };
 		749DD2685EA435A74A12CDEA /* Recipe+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3326AECC8E624813DE42B7C0 /* Recipe+Schema.swift */; };
 		C098A916D914C2F14A0E1363 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0096CDD08E075E8725FAA4 /* AmplifyModels.swift */; };
 		F1A416A19080AF407E4FF377 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A0D6C0B2630B0370F1C12 /* Recipe.swift */; };
@@ -35,6 +36,7 @@
 		5F13E9582B6FC74400D7CC00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F13E95B2B6FC74400D7CC00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F61524E2B700A7B00033B5C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5F6152502B79041F00033B5C /* RecipeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsView.swift; sourceTree = "<group>"; };
 		68B8E3B54AB45D5B81CE3F43 /* Ingredient.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Ingredient.swift; path = amplify/generated/models/Ingredient.swift; sourceTree = "<group>"; };
 		72B552EEEE49502B946A841F /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		862BBC65341BA4851B11741E /* Ingredient+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Ingredient+Schema.swift"; path = "amplify/generated/models/Ingredient+Schema.swift"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5F13E9542B6FC74200D7CC00 /* recipesApp.swift */,
 				5F13E9562B6FC74200D7CC00 /* ContentView.swift */,
 				5F61524E2B700A7B00033B5C /* DataService.swift */,
+				5F6152502B79041F00033B5C /* RecipeDetailsView.swift */,
 				5F13E9582B6FC74400D7CC00 /* Assets.xcassets */,
 				5F13E95A2B6FC74400D7CC00 /* Preview Content */,
 			);
@@ -204,6 +207,7 @@
 				C098A916D914C2F14A0E1363 /* AmplifyModels.swift in Sources */,
 				10D34E411CB0C562E41A6A4F /* Ingredient+Schema.swift in Sources */,
 				35A3B7746154D690CDEF163C /* Ingredient.swift in Sources */,
+				5F6152512B79041F00033B5C /* RecipeDetailsView.swift in Sources */,
 				749DD2685EA435A74A12CDEA /* Recipe+Schema.swift in Sources */,
 				F1A416A19080AF407E4FF377 /* Recipe.swift in Sources */,
 				266938DB284F50086AE6A80D /* RecipeIngredient+Schema.swift in Sources */,

@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     @State var recipes = [Recipe]()
     @State var searchText = ""
+    @State var selectedRecipe: Recipe?
+    
     var service = DataService()
     var body: some View {
         VStack {
@@ -26,21 +28,43 @@ struct ContentView: View {
                 }
             }
             List(recipes, id: \.id) { recipe in
-                VStack(alignment: .leading) {
-                    Text(recipe.name)
-                        .font(.headline)
-                    Text(recipe.description)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-            }
-           
+                    VStack (spacing: 20){ 
+                        HStack {
+                            Image("list-placeholder")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(5)
+                            VStack(alignment: .leading) {
+                                Text(recipe.name)
+                                    .font(.headline)
+                                Text(recipe.description)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
+                            Spacer()
+                            Image("regular_2.5")
+                                .foregroundColor(.secondary)
+                        }
+                            Divider()
+                    }.listRowSeparator(.hidden)
+                    .onTapGesture {
+                       selectedRecipe = recipe
+                    }
+                }.listStyle(.plain)
+               
+                
         }
-        .padding()
+         
         .task {
-             recipes = await service.listRecipes()
+            recipes = await service.listRecipes()
         }
+        .sheet(item: $selectedRecipe) { item in
+            RecipeDetailsView(recipe: item)
+        }
+           
     }
+        
+    
 }
 
 #Preview {

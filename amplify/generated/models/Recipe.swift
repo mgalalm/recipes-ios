@@ -2,7 +2,7 @@
 import Amplify
 import Foundation
 
-public struct Recipe: Model {
+public struct Recipe: Model, Identifiable {
   public let id: String
   public var name: String
   public var description: String
