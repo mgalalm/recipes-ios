@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "recipes",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-01-31T20:59:11.700Z"
+}
